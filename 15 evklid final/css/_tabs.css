@@ -1,0 +1,182 @@
+.tabs__btns-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 45px;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.tabs__btn-item {
+  margin-right: 85px;
+}
+
+/* .tabs__btn-item:last-child {
+  margin-right: 0px;
+} */
+
+.tabs__btn {
+  line-height: inherit;
+  transition: color var(--short);
+  color: var(--black);
+}
+
+.tabs__btn:focus:not(:hover:not(:active)):not(:active) {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.tabs__btn:active {
+  color: var(--dark-orange);
+}
+
+.tabs__content-wrap {
+  display: none;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.tabs__content-wrap.active {
+  display: flex;
+  animation-name: fade-in ;
+  animation-duration: .7s;
+}
+
+/* Вариант через БГ */
+
+/* .tabs__content-wrap::after {
+  content: "";
+  width: calc(870 / 1770 * 100%);
+  min-height: 460px;
+  margin-top: 10px;
+  background-color: var(--gray-blue);
+  background-size: cover;
+  background-position: center;
+} */
+
+/* .tabs__content-wrap--consultation::after {
+  background-image: url("..//img/how_consalt.jpg");
+  border-radius: 32px;
+} */
+
+.tabs__content {
+  width: calc(758 / 1770 * 100%);
+}
+
+.tabs__title {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.tabs__links-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: -32px;
+}
+
+.tabs__link {
+  margin-right: 32px;
+  margin-bottom: 32px;
+}
+
+.tabs__image-wrap {
+  width: calc(870 / 1770 * 100%);
+  padding-top: 10px;
+}
+
+.tabs__image {
+  display: block;
+  width: 100%;
+}
+
+@media (max-width: 1280px) {
+  .tabs__btns-list {
+    margin-bottom: 50px;
+  }
+
+  .tabs__content {
+    width: calc(437 / 924 * 100%);
+  }
+
+  .tabs__image-wrap {
+    width: calc(437/ 924 * 100%);
+  }
+
+  .tabs__text {
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 962px) {
+  .tabs__content-wrap {
+    flex-direction: column-reverse;
+  }
+
+  .tabs__content,
+  .tabs__image-wrap {
+    width: 100%;
+  }
+
+  .tabs__image-wrap {
+    margin-bottom: 38px;
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .tabs__btns-list {
+    justify-content: space-between;
+    margin-right: -15px;
+  }
+
+  .tabs__btn-item {
+    margin-right: 15px;
+  }
+
+  .tabs__text br {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .tabs__btns-list {
+    margin-bottom: 16px;
+    font-size: 14px;
+  }
+
+  .tabs__title {
+    font-size: 18px;
+    font-weight: var(--medium);
+    line-height: 32px;
+  }
+
+  .tabs__image-wrap {
+    margin-bottom: 16px;
+  }
+
+  .tabs__links-wrap {
+    margin-right: -10px;
+    margin-bottom: 10px;
+  }
+
+  .tabs__link {
+    min-width: 118px;
+    height: 39px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+
+  .tabs__link--detail {
+    min-width: 162px;
+    height: 39px;
+  }
+}
+
+@media (any-hover: hover) {
+  .tabs__btn:hover:not(:active) {
+    color: var(--orange);
+    outline: none;
+    cursor: pointer;
+  }
+}

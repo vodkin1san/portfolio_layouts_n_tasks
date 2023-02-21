@@ -1,0 +1,99 @@
+.teachers {
+  padding-top: 70px;
+  padding-bottom: 75px;
+  background-color: #212133;
+}
+
+
+.teachers__title {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: white;
+}
+
+.teachers__human {
+  margin-bottom: 0;
+}
+
+.teachers__card {
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  border-radius: 50px 50px 0px 0px;
+}
+
+.teachers__title-min {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+  color: white;
+}
+
+.teachers__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #85859B;
+}
+
+
+/* 768 */
+@media (max-width: 1439px) {
+  .teachers {
+    padding-bottom: 30px;
+  }
+
+  .teachers__container {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+
+  .teachers__cards {
+    margin-bottom: 20px;
+  }
+
+  .teachers__title-min {
+    margin-bottom: 10px;
+  }
+}
+
+/* 576 */
+@media (max-width: 767px) {
+  .teachers {
+    padding-bottom: 55px;
+  }
+
+  .teachers__container {
+    padding-left: 33px;
+    padding-right: 33px;
+  }
+}
+
+/* 320 */
+@media (max-width: 575px) {
+  .teachers {
+    padding-top: 45px;
+  }
+
+  .teachers__container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .teachers__title {
+    margin-bottom: 28px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 100%;
+  }
+}
