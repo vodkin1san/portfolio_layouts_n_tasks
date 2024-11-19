@@ -1,0 +1,108 @@
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  /* max-width: 868px; */
+  /* width: 100%; */
+  /* height: 622px; */
+  background-color: var(--gray-blue);
+  background-image: url("..//img/about-bg.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.card-detail__content {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  border-radius: 32px;
+  color: var(--white);
+  background-color: var(--dark-transp);
+}
+
+.card-detail__text {
+  max-width: 455px;
+  margin-top: 0;
+  margin-right: 40px;
+  margin-bottom: 0;
+  font-weight: var(--bold);
+  line-height: 32px;
+}
+
+.card-detail__btn {
+  margin-left: auto;
+}
+
+@media (max-width: 1440px) {
+  .card-detail {
+    max-width: 100%;
+    min-height: 640px;
+  }
+}
+
+@media (max-width: 962px) {
+  .card-detail {
+    max-width: 100%;
+    min-height: 650px;
+  }
+
+  .card-detail__content {
+    padding: 34px 40px;
+  }
+
+  .card-detail__text {
+    max-width: calc(366 / (668 - 34 - 34) * 100%);
+  }
+}
+
+@media (max-width: 660px) {
+  .card-detail__text {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .card-detail__btn {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-detail {
+    display: block;
+    min-height: auto;
+    background-color: transparent;
+    background-image: url("..//img/about-bg@320.jpg");
+    background-size: 0;
+  }
+
+  .card-detail::before {
+    content: "";
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding-top: calc(200 / 290 * 100%);
+    background-color: var(--gray-blue);
+    background-image: inherit;
+    background-position: center;
+    background-size: cover;
+  }
+
+  .card-detail__content {
+    padding: 0;
+    color: var(--dark);
+    background-color: transparent;
+  }
+
+  .card-detail__text {
+    margin-bottom: 11px;
+    font-size: 14px;
+    font-weight: var(--regular);
+    line-height: 28px;
+  }
+
+  .card-detail__btn {
+    min-width: 162px;
+  }
+}
