@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Поиск Фильмов</h1>
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="Введите навазние фильма..." />
+        <button type="submit">Поиск</button>
+      </form>
+    </header>
+    <section id="filters">
+      <select id="year-filter">
+        <option value="">Все годы</option>
+      </select>
+      <select id="genre-filter">
+        <option value="">Все жанры</option>
+      </select>
+    </section>
+    <main>
+      <section id="movies-container"></section>
+    </main>
+    <aside id="favorites">
+      <h2>Избранное</h2>
+      <ul id="favorites-list"></ul>
+    </aside>
+    <div id="load-more">
+      <button id="load-more-button">Показать ещё</button>
+    </div>
+    <div id="modal" class="modal" style="display: none">
+      <div class="modal-content" id="modal-content"></div>
+      <button id="close-modal">Закрыть</button>
+    </div>
+    <div id="loading-spinner" class="spinner" style="display: none">
+      <div class="loader"></div>
+    </div>
+  </body>
+</html>

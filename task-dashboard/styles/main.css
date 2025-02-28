@@ -1,0 +1,58 @@
+@import url(./components/board.css);
+@import url(./components/card.css);
+@import url(./components/modal.css);
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header,
+main,
+footer {
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  cursor: grab;
+  user-select: none;
+}
+
+.card:active {
+  cursor: grabbing;
+}
+
+.cards-container.dragover {
+  border: 2px dashed #007bff;
+}
+
+.drag-hover {
+  border: 2px dashed #007bff;
+  /* можно добавить фон или изменить отступы */
+}
+
+#search-input {
+  display: block;
+  width: 300px;
+  padding: 0.75rem 1rem;
+  margin: 0.5rem auto; /* Центрирование */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: #007bff;
+}

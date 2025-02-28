@@ -1,0 +1,92 @@
+/* Модальное окно. Данный блок оставляем без изменений */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
+.modal .modal-content {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  min-width: 300px;
+  max-width: 500px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.modal .modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Стилизация полей ввода в модальном окне */
+.modal .modal-content input[type="text"],
+.modal .modal-content textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  /* Задаем фиксированную высоту для текстовых полей, если необходимо.
+     Для textarea задаем минимальную высоту, чтобы она выглядела аккуратно */
+  height: 40px;
+}
+
+.modal .modal-content textarea {
+  min-height: 100px; /* Это значение можно настроить по вкусу */
+  height: auto; /* чтобы textarea могла расширяться */
+}
+
+.modal .modal-content input[type="text"]:focus,
+.modal .modal-content textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+/* Стили для кнопки "Сохранить" в модальном окне */
+.modal .modal-content button[type="submit"],
+.modal .modal-content .modal-save-btn {
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(to right, #4caf50, #45a049);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal .modal-content button[type="submit"]:hover,
+.modal .modal-content .modal-save-btn:hover {
+  background: linear-gradient(to right, #45a049, #4caf50);
+}

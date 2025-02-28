@@ -1,0 +1,68 @@
+/* Стили для блока транзакции */
+.transaction {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+/* Различное оформление для доходов и расходов */
+.transaction.income {
+  border-left: 5px solid #28a745; /* зеленый для доходов */
+}
+
+.transaction.expense {
+  border-left: 5px solid #dc3545; /* красный для расходов */
+}
+
+/* Стили заголовка транзакции */
+.transaction h3 {
+  font-size: 1.1rem;
+  margin: 0 0 0.5rem;
+}
+
+/* Стили описания транзакции */
+.transaction p {
+  margin: 0.25rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Стили для кнопок в транзакции */
+.transaction button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+  transition: background-color 0.3s ease;
+}
+
+/* Специфичные стили для кнопки редактирования */
+.transaction-edit-btn {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.transaction-edit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Специфичные стили для кнопки удаления */
+.transaction-delete-btn {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+.transaction-delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Стили для подсветки области, куда вставляется перетаскиваемая транзакция */
+.drag-hover {
+  border: 2px dashed #007bff;
+}

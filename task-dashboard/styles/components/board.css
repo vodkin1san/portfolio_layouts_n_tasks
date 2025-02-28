@@ -1,0 +1,32 @@
+.board {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 300px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.board h2 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.cards-container {
+  margin-top: 10px;
+}
+
+.add-card-btn {
+  background-color: #007bff;
+  border: none;
+  color: #fff;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.add-card-btn:hover {
+  background-color: #0056b3;
+}

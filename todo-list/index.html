@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Todo List</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="container">
+        <h1>Список задач</h1>
+        <form id="task-form" class="task-form">
+          <input id="new-task" class="input-form" type="text" placeholder="Новая задача" />
+          <button class="btn btn-form" type="submit">Добавить</button>
+        </form>
+        <div class="filter-buttons">
+          <button class="btn btn-filter" data-filter="all">Все</button>
+          <button class="btn btn-filter btn-completed" data-filter="completed">Выполненные</button>
+          <button class="btn btn-filter btn-non-completed" data-filter="non-completed">Невыполненные</button>
+        </div>
+        <ul class="task-list">
+          <li class="task">
+            <button class="btn btn-completed-task">Выполнить</button>
+            <button class="btn btn-delete-task">Удалить</button>
+          </li>
+          <li class="task completed">
+            <button class="btn btn-completed-task">Выполнить</button>
+            <button class="btn btn-delete-task">Удалить</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
